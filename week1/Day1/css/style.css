@@ -1,0 +1,92 @@
+/* style for ex1*/
+body > p{
+  color: red;
+}
+/* end style*/
+
+/* style ex2*/
+div#exo1{
+  background-color: #c0f7d7;
+  border: 1px solid #16733d;
+  font-size: 20px;
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  border-bottom-style: dashed;
+  border-left-style: dotted;
+  border-right-color: blue;
+  box-shadow: 3px 5px 10px #404442;
+}
+/* end */
+
+/* style for ex3*/
+/* flag */
+#container{
+  background-color: #c0f7d7;
+  margin: 50px 10px 10px 10px;
+  padding: 50px;
+  width: 500px;
+}
+
+#flag, #blue-band, #white-band, #red-band{
+  height: 50px;
+}
+
+
+#blue-band, #white-band, #red-band{
+  display: inline-block;
+}
+
+#flag{
+  width: 96px;
+  padding: 0;
+}
+#blue-band{
+  background-color: #012597;
+  width: 30px;
+}
+#white-band{
+  background-color: #fff;
+  margin-left: -4px;
+  width: 30px;
+}
+#red-band{
+  background-color: #ed2736;
+  width: 30px;
+  margin-left: -4px;
+}
+
+
+/* s end ex3*/
+
+/* style for ex5*/
+
+/* question 1 */
+div ul > li:nth-child(2){
+  color:blue;
+}
+/* end 1 */
+
+/* question 2 */
+body > div:nth-child(4) ul > li{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* end 2 */
+
+/* question 3 */
+ body > div:nth-child(5) p:nth-child(1){
+  background: pink;
+  color: white;
+}
+/* end 3 */
+
+/* question 4 */
+body > div:nth-child(5) p:nth-child(3){
+  background-color: lightblue;
+  padding: 10px;
+  margin: 3px;
+}
+/* end 4 */
+
+/* end ex5*/

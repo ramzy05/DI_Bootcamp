@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week1_day2</title>
+</head>
+<body>
+  <div id="box-shadow">
+    
+    <div id="welcome">
+      <div id="welcome-text"><h1>thor odinson</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium mollitia iure optio quisquam, facere nisi numquam debitis earum ut dolore excepturi amet, tenetur sed eius doloribus! Soluta pariatur assumenda inventore!</p>
+      </div>
+      </div>
+  </div>
+  
+  <header>
+    <nav id="nav-bar">
+      <p id="inverted">V</p><p id="normal">V</p>
+      <div id="menu">
+        <ul>
+          <li><a href="#">characters</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">help</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <footer>
+    @Copyright 2021-2022
+  </footer>
+  <style>
+    *{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+  height: 100vh;
+  background-image: url(./thor.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -350px;
+}
+
+#box-shadow{
+  height: 100%;
+  width: 100%;
+  background: rgba(61, 58, 58, 0.7);
+  /* opacity: .6; */
+}
+
+#welcome{
+  height: 100%;
+  width: 100%;
+}
+
+#welcome-text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+  font-size: 2em;
+}
+
+#welcome-text h1{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+  background: #1b1b1b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+header * {
+  display: inline;
+}
+
+#nav-bar>p{
+  margin-left: 5px;
+}
+
+#normal, #inverted{
+  position: absolute;
+  font-size: 2.4em;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#normal{
+  left: 18px;
+}
+
+#inverted{
+  transform: rotate(-180deg);
+}
+
+#menu{
+  margin-left: 900px;
+ 
+}
+
+#menu>ul{
+  list-style-type: none;
+}
+
+#menu li{
+  margin: 20px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+#menu li a:link, #menu li a:active,
+#menu li a:visited,#logo a:link, 
+#logo a:active, #logo a:visited{
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s ease-in;
+}
+
+#menu li a:hover{
+  border-bottom:3px solid #f7f7f7;
+}
+/* #08376b */
+
+footer{
+  padding: 100px;
+  background: #1b1b1b;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+  </style>
+</body>
+</html>
