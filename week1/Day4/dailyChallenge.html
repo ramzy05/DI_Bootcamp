@@ -4,25 +4,231 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
   <title>week2-day4</title>
 </head>
 <body>
-  <section id="first-sec">
-    <div id="name-prof">
-      <p>John<br><span>fotso</span></p>
-      <p>web designer</p>
+  <div class="main-container">
+    <div class="left-side">
+      <div class="profileInfo">
+        <div class="imgContainer">
+        </div>
+        <h2>Ramsès Aguegang<br><span>Developpeur Web</span></h2>
+      </div>
+      <div class="contactInfo">
+        <h3 class="title">Contact</h3>
+        <ul>
+          <li>
+            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <span class="text">+237 673 707 555</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <span class="text">ramses@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+      <div class="contactInfo education">
+        <h3 class="title">Parcours scolaire</h3>
+        <ul>
+          <li>
+            <h5>2016 - 2017</h5>
+            <h4>BEPC</h4>
+            <h4>Lycée bilingue de Mbouda</h4>
+          </li>
+          <li>
+            <h5>2018 - 2019</h5>
+            <h4>Probatoire</h4>
+            <h4>Lycée bilingue de Mbouda</h4>
+          </li>
+          <li>
+            <h5>2019 - 2020</h5>
+            <h4>Baccalauréat</h4>
+            <h4>Lycée bilingue de Mbouda</h4>
+          </li>
+        </ul>
+      </div>
     </div>
-    <img src="./man.webp" alt="ma photo">
-  </section>
-  <style>
+    
+    <div class="right-side">
+      <div class="about">
+        <h2 class="title2">Profile</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+          elit. Ea quod ipsam magnam debitis impedit sit id voluptates
+          fugiat, inventore amet in tempora distinctio eos. Deleniti, 
+          eligendi.<br><br> consectetur? Velit, ab cumque!
+          Ea quod ipsam magnam debitis impedit sit id volupt Ea quod 
+          ipsam magnam debitis impedit sit id voluptateslit.
+          lit. Ea quod ipsam magnam debitis impedit sit id voluptates</p>
+      </div>
+      <div class="about">
+        <h2 class="title2">Expérience</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+          elit. Ea quod ipsam magnam debitis impedit sit id voluptates
+          fugiat, inventore amet in tempora distinctio eos. Deleniti, 
+          eligendi.<br><br> consectetur? Velit, ab cumque!
+          Ea quod ipsam magnam debitis impedit sit id volupt Ea quod 
+          ipsam magnam debitis impedit sit id voluptateslit.
+          lit. Ea quod ipsam magnam debitis impedit sit id voluptates</p>
+      </div>
+      <div class="about">
+        <h2 class="title2">Activités</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+          elit. Ea quod ipsam magnam debitis impedit sit id voluptates
+          fugiat, inventore amet in tempora distinctio eos. Deleniti, 
+          eligendi.<br><br> consectetur? Velit, ab cumque!
+          Ea quod ipsam magnam debitis impedit sit id volupt Ea quod 
+          ipsam magnam debitis impedit sit id voluptateslit.
+          lit. Ea quod ipsam magnam debitis impedit sit id voluptates</p>
+      </div>
+
+    </div>
+  </div>
+ <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
     *{
-      padding: 0px;
-      margin: 0px;
+      margin:0;
+      padding: 0;
       box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      background: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .main-container{
+      position: relative;
+      width: 100%; 
+      max-width: 1000px;
+      min-height: 1000px;
+      background: white;
+      display: grid;
+      margin: 50px;
+      grid-template-columns: 1fr 2fr;
+      box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
     }
 
-    /* section 1 design */
-  </style>
+
+    .main-container .left-side{
+      position: relative;
+      background: #003147;
+      padding: 40px;
+    }
+
+    .profileInfo{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 5px solid orange;
+    }
+
+    .profileInfo .imgContainer{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-image: url(./man.webp);
+      background-repeat: none;
+      background-size: cover;
+      background-position: center;
+      font-weight: 600;
+      line-height: 1.4em;
+    }
+
+    .profileInfo h2{
+      color:#fff;
+      font-size: 1.5em;
+      margin-top: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    
+    .profileInfo h2 span{
+      font-size: 0.8em;
+      font-weight: 300;
+    }
+
+    .contactInfo{
+      padding-top: 40px;
+    }
+
+    .title{
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .contactInfo ul{
+      position: relative;
+    }
+
+    .contactInfo ul li{
+      position: relative;
+      list-style: none;
+      margin: 10px 0;
+      cursor: pointe rS;
+    }
+
+    .contactInfo ul li .icon{
+      display: inline-block;
+      width: 30px;
+      font-size: 18px;
+      color: #03a9f4;
+    }
+
+  
+    
+    .text{
+      color: #fff;
+      font-weight: 300;
+    }
+
+    .contactInfo.education h5{
+      color: orange;
+      font-weight: 500;
+    }
+    .contactInfo.education h4:nth-child(2){
+      color: #fff;
+      font-weight: 500;
+    }
+    .contactInfo.education h4{
+      color: #fff;
+      font-weight: 300;
+    }
+    .main-container .right-side{
+      position: relative;
+      background: #fff;
+      padding: 40px;
+    }
+
+    .about{
+      margin-bottom: 50px;
+    }
+
+    .about:last-child{
+      margin-bottom: O;
+    }
+
+    .title2{
+      color: orange;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    p{
+      color: #003147;
+    }
+ </style>
 </body>
 </html>
