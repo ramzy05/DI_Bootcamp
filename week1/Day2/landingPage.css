@@ -5,22 +5,20 @@
 }
 
 body{
-  max-height: 50vh;
-  min-height: 50vh;
+  /* max-height: 50vh;
+  min-height: 50vh; */
+  padding: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.main-container{
-  background: #eef3f7;
-  margin-top: 20px;
-  min-width: 80vw;
-  max-width: 80vw;
-  margin-left: 10vw;
-}
 
 .main-container{
   position: relative;
-  margin-bottom: 600px;
+  margin-left: 10vw;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  min-width: 80vw;
+  max-width: 80vw;
   background-color: #f8f9fa;
   padding: 10px 20px 20px 20px;
 }
