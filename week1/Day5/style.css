@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+}
+
+header{
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5em;
+  background: rgb(0, 85, 155);
+}
+
+.icon{
+  width: 100px;
+  font-size: 50px;
+  color: orange;
+  justify-content: center;
+
+}
+
+nav{
+  padding: 6px;
+  justify-content: center;
+}
+
+nav ul{
+  list-style: none;
+  position: absolute;
+  right: 0px;
+  top: 25%;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+nav ul li a:link,
+nav ul li a:active, 
+nav ul li a:visited{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.6s;
+}
+nav ul li a:link,
+nav ul li a:visited{
+  color: white;
+}
+nav ul li a:hover{
+  color: rgb(172, 172, 172);
+}
+
+
+footer{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  bottom: 0;
+  top: 600px;
+  left: 0;
+  right: 0;
+  background: rgb(0, 85, 155);
+  text-align: center;
+}
+
+footer p{
+  color: white;
+}
+footer p:nth-child(1){
+  margin-top: 12px;
+  font-weight: 600;
+}
+footer p:nth-child(2){
+  font-weight: 100;
+  margin-bottom: 200px;
+}

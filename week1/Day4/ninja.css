@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  
+  background: white;
+  border: 1px solid black;
+}
+
+.left-side, .right-side{
+  display: inline-block;
+  padding:50px 10px 50px 10px;
+  margin-left: 5px;
+}
+
+.left-side{
+  background: white;
+
+
+}
+
+.form-field{
+  margin: 10px;
+}
+
+form input[type="button"]{
+ 
+  width: 100%;
+}
+
+.right-side{
+  background: linear-gradient(110deg, #292136, #802592);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  
+}
