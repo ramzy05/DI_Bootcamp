@@ -1,0 +1,190 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* max-height: 50vh;
+  min-height: 50vh; */
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.main-container{
+  margin-left: 12vw;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  min-width: 50vw;
+  max-width: 69vw;
+  /* background-color: #f8f9fa; */
+  background-color: #f5f7f8;
+ /*  padding: 10px 20px 20px 20px; */
+  padding: 50px 40px 10px 40px;
+  border-top: 5px solid rgb(223, 220, 216);
+  border-right: 5px solid ;
+  border-left: 5px solid ;
+  border-image: linear-gradient(to top, rgb(24, 23, 24), rgb(223, 220, 216)) 1;
+
+}
+.top-container{
+  position: relative;
+  padding: 50px 50px 80px 50px;
+  border-bottom: 2px solid gray;  
+}
+.top-container .info-on-me{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.info-on-me p{
+  text-transform: uppercase;
+}
+
+.info-on-me p:nth-child(1){
+  font-size: 2em;
+  line-height: 28px;
+  color: gray;
+  letter-spacing: 3px;
+}
+
+.info-on-me p:nth-child(1) span{
+  font-weight: bolder;
+  color: black;
+}
+
+.info-on-me p:nth-child(1)::after{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 20px;
+  background: #eca110;
+}
+
+.info-on-me p:nth-child(2){
+  font-size: 0.8em;
+  color: gray;
+  margin-top: 7px;
+}
+
+.top-container .imgProfile{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  background-image: url(./cv1profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: top;
+  border-bottom: 6px solid #eca110;
+  vertical-align: top;
+}
+
+.bottom-section{
+  position: relative;
+  padding: 0px 50px 70px 0px;
+}
+
+.left-section{
+  position: relative;
+  border-right: 10px solid rgba(128, 128, 128, 0.199);
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 25px;
+}
+
+.left-section .contact-section{
+  margin-bottom: 70px;
+}
+
+
+
+.contact-section>div{
+  margin-bottom: 13px;
+}
+.contact-section .icon-cont{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #eca110;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: center;
+}
+
+.icon-cont i{
+  color: white;
+  font-size: 0.9em;
+  
+}
+
+.icon-cont i.phone{
+  font-size: 1.1em;
+}
+
+.contact-section p{
+  display: inline-block;
+  margin-left: 12px;
+  font-size: 0.8em;
+  font-weight: 500;
+  vertical-align: center;
+}
+
+h3{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+h3::after{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 37px;
+  background: #eca110;
+}
+
+h4{
+  text-transform: uppercase;
+}
+
+.education-section p{
+  display: inline-block;
+  font-size: .8em;
+}
+
+.education-section .item1{
+  margin-bottom: 23px;
+}
+
+
+.right-section{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 25px;
+}
+
+.right-section p{
+  display: inline-block;
+  font-size: .9em;
+}
+
+.right-section .profile-section{
+  margin-bottom: 110px;
+}
+.right-section .profile-section span{
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 1.15em;
+}
+
+.contact-section, .profile-section{
+  margin-top: 30px;
+}
