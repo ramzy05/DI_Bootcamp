@@ -11,7 +11,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 900px;
+  width: 800px;
   background: white;
   border-radius: 2px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
@@ -21,7 +21,7 @@
   display: inline-block;
   padding:25px 10px 25px 10px;
   margin-left: 5px;
-  width: 50%;
+  width: 49%;
   vertical-align: top;
  
 }
@@ -34,7 +34,7 @@
 }
 
 .left-side h2{
-  padding: 8px 40% 0px 30%;
+  padding: 8px 40% 0px 35%;
   margin-bottom: 15px;
   font-size: 1.65em;
 }
@@ -63,7 +63,7 @@ form input[type="checkbox"]{
 }
 form span{
   display: inline-block;
-  padding-left: 54px;
+  padding-left: 92px;
 }
 
 form span a:link{
@@ -71,7 +71,7 @@ form span a:link{
 }
 
 form span a:link,form span a:visited{
-  color: rgb(82, 81, 81);
+  color: inherit;
 }
 
 form span a:hover{
@@ -80,7 +80,7 @@ form span a:hover{
 }
 form input[type="button"]{
   margin: 20px 0 30px 0;
-  padding: 8px 38% 8px 38%;
+  padding: 8px 39.5% 8px 39.5%;
   color: white;
   background: #9c27b0;
   border: none;
@@ -101,7 +101,7 @@ form input[type="button"]:hover{
   content: '';
   display: inline-block;
   height: 1px;
-  width: 25%;
+  width: 29%;
   margin: 1px 0 1px 13px;
   background: #292136;
 }
@@ -111,7 +111,7 @@ form input[type="button"]:hover{
   content: '';
   display: inline-block;
   height: 1px;
-  width: 25%;
+  width: 28%;
   margin: 1px 15px 1px 0;
   background: #292136;
 }
@@ -122,10 +122,42 @@ form input[type="button"]:hover{
 }
 
 .right-side{
-  background: linear-gradient(to bottom right, #292136 30%, #9c27b0);
+  background: linear-gradient(to bottom right, #292136 15%, #9c27b0);
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   border-top-right-radius: 2px;
+  color: white;
+  text-align: center;
+  padding: 25% 0;
+}
+
+.right-side h2{
+  font-size: 1.7em;
+  letter-spacing: 1px;
+}
+
+.right-side p{
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.753);
+  padding: 0 25px;
+}
+
+.right-side button{
+  margin: 20px 0 30px 0;
+  padding: 8px 5% 8px 5%;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: .90em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  transition: padding .5s;
+}
+
+.right-side button:hover{
+  padding: 8px 20% 8px 20%;
 }
