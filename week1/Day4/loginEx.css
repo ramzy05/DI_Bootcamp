@@ -1,46 +1,131 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+ *{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+ }
 
 #main-container{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
-  
+  width: 900px;
   background: white;
-  border: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
 }
 
 .left-side, .right-side{
   display: inline-block;
-  padding:50px 10px 50px 10px;
+  padding:25px 10px 25px 10px;
   margin-left: 5px;
+  width: 50%;
+  vertical-align: top;
+ 
 }
 
 .left-side{
   background: white;
+  font-size: .85em;
+  font-weight: 500;
+  color: #292136;
+}
 
-
+.left-side h2{
+  padding: 8px 40% 0px 30%;
+  margin-bottom: 15px;
+  font-size: 1.65em;
 }
 
 .form-field{
-  margin: 10px;
+  margin-bottom: 25px;
+  width: 90%;
+  padding: 10px 7px 10px 7px;
+  background: rgba(223, 221, 221, 0.801);
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  font-size: 1em;
 }
 
+.form-field::placeholder{
+  font-size: 15px;
+}
+.form-field:focus{
+  border: 1px solid #9b27b094;
+}
+form input[type="checkbox"]{
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+form span{
+  display: inline-block;
+  padding-left: 54px;
+}
+
+form span a:link{
+  text-decoration: none;
+}
+
+form span a:link,form span a:visited{
+  color: rgb(82, 81, 81);
+}
+
+form span a:hover{
+  color: #711781;
+  text-decoration: underline;
+}
 form input[type="button"]{
- 
-  width: 100%;
+  margin: 20px 0 30px 0;
+  padding: 8px 38% 8px 38%;
+  color: white;
+  background: #9c27b0;
+  border: none;
+  font-size: .90em;
+  transition: all .8s;
+}
+
+form input[type="button"]:hover{
+  background: #711781;
+}
+
+
+.connect-with p:nth-child(1){
+  padding-right: 35px;
+}
+
+.connect-with p:nth-child(1)::after{
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 25%;
+  margin: 1px 0 1px 13px;
+  background: #292136;
+}
+
+
+.connect-with p:nth-child(1)::before{
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 25%;
+  margin: 1px 15px 1px 0;
+  background: #292136;
+}
+
+.connect-with + p{
+  margin-top: 150px;
+  padding: 8px 38% 8px 38%;
 }
 
 .right-side{
-  background: linear-gradient(110deg, #292136, #802592);
+  background: linear-gradient(to bottom right, #292136 30%, #9c27b0);
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  
+  border-top-right-radius: 2px;
 }
