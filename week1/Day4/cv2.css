@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+ *{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+ }
+
+body{
+  margin: 20px 0 20px 150px;
+  min-width: 90vw;
+  max-width: 90vw;
+}
+
+#global-div{
+  
+  min-width: 80vw;
+  max-width: 80vw;
+  /* min-height: 100vh; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 20px solid #347be3;
+  background: #347be3;
+  border-image: linear-gradient(to top, rgba(46, 46, 46, 0.925) 2%, #347be3) 1;
+  
+}
+.main-container{
+ /*  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  min-width: 90vw;
+  max-width: 90vw;
+  min-height: 50vh; */
+  background: rgb(245, 244, 244);
+  width: 100%;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.733);
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+}
+
+#nav-bar{
+  /* border: 1px solid green; */
+  padding: 20px 15px 20px 15px;
+  vertical-align: center;
+}
+
+#logo{
+  display: inline-block;
+  /* position: absolute;
+  left: 20px; */
+  text-align: center;
+  vertical-align: center;
+}
+
+
+#nav-bar > div{
+  display: inline-block;
+}
+
+#nav-bar > div:nth-child(2) span{
+  font-weight: 700;
+}
+
+#logo{
+  width: 25px;
+  height: 25px;
+  background: #347be3;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: center;
+  color: white;
+  font-weight: 700;
+  
+}
+
+
+#nav-bar ul{
+  display: inline-block;
+  margin-left: 330px;
+ 
+}
+#nav-bar ul li{
+  display: inline-block;
+  list-style: none;
+  text-transform: capitalize;
+  margin-left: 15px;
+  font-size: 0.8em;
+}
+
+#nav-bar ul li a:link,
+#nav-bar ul li a:visited{
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.top-sect > div{
+  display: inline-block;
+}
+
+
+.top-sect{
+  padding: 30px 0px 30px 25%;
+  /* border: 1px solid red; */
+  text-align: justify;
+
+}
+.top-sect .myImage{
+  background-image: url(./cv2Image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 110px;
+  border: 7px solid white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.219);
+  padding: 100px;
+  margin-right: 15px;
+  
+}
+
+.top-sect .info-desc{
+  display: inline-block;
+  /* border: 1px solid green */;
+  width: 50%;
+  vertical-align: top;
+  font-size: .8em;
+  padding-top: 10px;
+}
+
+.top-sect .info-desc h1{
+  display: inline-block;
+}
+
+.top-sect .btn-container{
+  /* border: 1px solid red; */
+  margin-top: 20px;
+}
+
+.btn-container button{
+  background: transparent;
+  border-radius: 20px;
+  /* border: 2px solid #c3c4c5; */
+  border: 2px solid #347be3;
+  transition: all .8s;
+  padding: 6px 20px 6px 20px;
+  font-weight: 700;
+}
+.btn-container button:nth-child(1){
+  margin-right: 9px;
+  border: 2px solid #347be3;
+}
+
+.btn-container button:nth-child(1):hover{
+  box-shadow: 0 0px 12px #347be3;
+}
+
+.btn-container button:nth-child(2){
+  padding: 5px 20px 5px 20px;
+  border: 2px solid gray;
+}
+
+.btn-container button:nth-child(2):hover{
+  border: 2px solid #347be3;
+  box-shadow: 0 0px 12px #347be3;
+}
+
+.bottom-sect{
+  /* border: 1px solid red; */
+  padding: 0 0 0 15px;
+  margin-top: 70px;
+}
+
+.bottom-sect .right-col,
+.bottom-sect .left-col{
+  display: inline-block;
+  /* border: 2px solid green; */
+  width: 45%;
+  margin-top: 30px;
+  vertical-align: top;
+}
+
+
+.bottom-sect h5, 
+.bottom-sect p,
+.bottom-sect h4,
+.bottom-sect .content div{
+  display: inline-block;
+}
+
+.bottom-sect .right-col{
+  width: 50%;
+} 
+
+.bottom-sect h4::after{
+  content: '';
+  display: block;
+  height: 2.5px;
+  width: 30%;
+  background: #347be3;
+
+}
+
+#test::after{
+  content: '';
+  display: block;
+  height: 3.5px;
+  width: 30%;
+  background: #347be3;
+}
+
+.bottom-sect .bloc-1{
+  margin-bottom: 25px;
+}
+
+
+
+
+.bottom-sect .left-col .content div,
+.bottom-sect .right-col .content div{
+  width: 85%;
+  /* border: 1px solid red; */
+  vertical-align: top;
+  
+}
+
+.bottom-sect .content #log{
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  margin: 0;
+  height: 30px;
+/*   border: 1px solid rgb(0, 0, 0); */
+  margin-right: 2px;
+}
+
+i{
+  color: #347be3;
+  font-size: 1.9em;
+}
+.bottom-sect h5{
+  text-transform: capitalize;
+}
