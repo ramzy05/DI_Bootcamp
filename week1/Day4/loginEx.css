@@ -20,7 +20,6 @@
 .left-side, .right-side{
   display: inline-block;
   padding:25px 10px 25px 10px;
-  margin-left: 5px;
   width: 49%;
   vertical-align: top;
  
@@ -30,7 +29,8 @@
   background: white;
   font-size: .85em;
   font-weight: 500;
-  color: #292136;
+  color: #711781;
+  margin-left: 25px;
 }
 
 .left-side h2{
@@ -116,9 +116,23 @@ form input[type="button"]:hover{
   background: #292136;
 }
 
+.icons{
+  padding: 15px 50px 0px 0px;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.icons i{
+  padding-left: 10px;
+  
+}
+
+.icons a:link, icons:visited{
+  color: #9b27b0b6
+}
 .connect-with + p{
-  margin-top: 150px;
-  padding: 8px 38% 8px 38%;
+  margin-top: 50px;
+  padding: 8px 38% 0px 38%;
 }
 
 .right-side{
@@ -130,7 +144,11 @@ form input[type="button"]:hover{
   border-top-right-radius: 2px;
   color: white;
   text-align: center;
-  padding: 25% 0;
+  padding: 18% 0 25% 0;
+}
+
+.right-side > i:nth-child(1){
+  font-size: 3em;
 }
 
 .right-side h2{
@@ -160,4 +178,10 @@ form input[type="button"]:hover{
 
 .right-side button:hover{
   padding: 8px 20% 8px 20%;
+}
+
+.right-side button i{
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 3px;
 }
