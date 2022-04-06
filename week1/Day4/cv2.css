@@ -197,16 +197,18 @@ body{
   content: '';
   display: block;
   height: 2.5px;
-  width: 30%;
+  width: 25px;
   background: #347be3;
 
 }
 
+#test{
+  margin-top: 15px;
+}
 #test::after{
   content: '';
   display: block;
   height: 3.5px;
-  width: 30%;
   background: #347be3;
 }
 
@@ -229,7 +231,7 @@ body{
   display: inline-block;
   vertical-align: top;
   width: 40px;
-  margin: 0;
+  margin-top: 8px;
   height: 30px;
 /*   border: 1px solid rgb(0, 0, 0); */
   margin-right: 2px;
@@ -237,7 +239,7 @@ body{
 
 i{
   color: #347be3;
-  font-size: 1.9em;
+  font-size: 1.4em;
 }
 .bottom-sect h5{
   text-transform: capitalize;
