@@ -29,3 +29,22 @@ section {
 /* See what happens if width: 80%;   */
   align-self: flex-end
 }
+
+
+#main{
+  margin-top: 20px;
+  border: 3px solid blue;
+  background: lightblue;
+  display: flex;
+  height: 200px;
+  /*flex-direction: column-reverse;*/
+  justify-content: space-around;
+  
+  width: 50%;
+}
+
+#main .div3{
+  background: rgb(239, 204, 204); 
+  border: 2px solid orange;
+  width: 300px;
+}
