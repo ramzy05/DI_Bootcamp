@@ -1,0 +1,31 @@
+*{box-sizing: border-box;}
+
+
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.flexbox > div > div{
+  background: yellow;
+  border: 1px solid black;
+}
+
+.left, .right{
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-rows: repeat(4,50px);
+  row-gap: 10px;
+ 
+}
+
+.middle{
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 50px);  
+  grid-template-rows: 50px;
+  justify-content: space-around;
+  column-gap: 50px;
+  width: 10px;
+}
