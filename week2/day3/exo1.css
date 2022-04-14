@@ -1,0 +1,8 @@
+body div.container{
+  border: 1px solid red;
+}
+
+ .row .col{
+  background: gainsboro;
+  border: 1px solid black;
+}

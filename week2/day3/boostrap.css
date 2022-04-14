@@ -1,0 +1,26 @@
+.demo-content{
+  padding: 15px;
+  font-size: 18px;
+  background: #dbdfe5;
+  margin-bottom: 15px;
+}
+
+.demo-content.bg-alt{
+  background: #abb1b8;
+}
+
+.small-text, .medium-text, .large-text {
+font-size: 12px;
+}
+
+.small-text {
+color: red
+}
+
+.medium-text {
+color: blue
+}
+
+.large-text {
+color: green
+}
