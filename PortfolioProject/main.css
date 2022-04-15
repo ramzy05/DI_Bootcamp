@@ -67,7 +67,7 @@ header #overlay{
   width: 100%; 
   height: 100%;
   background-color: rgba(218, 218, 218, 0.61);
-  z-index: -2;
+  z-index: -10;
   position: absolute;
   top: 0;
 }
@@ -81,6 +81,7 @@ header .text{
   font-size: 1.1em;
   color: rgb(78, 77, 77);
   letter-spacing: 1.7px;
+  z-index: -1;
 }
 .text h1{
   color: #f97300;
