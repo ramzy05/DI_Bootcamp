@@ -25,8 +25,11 @@ header{
   background-size: cover;
   background-position: center;
   height: 90vh;
+  width: 100vw;
   position: relative;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
 }
 
