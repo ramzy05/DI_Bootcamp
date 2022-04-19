@@ -26,13 +26,13 @@ if(newDog === "Chihuahua"){
 
 //end ex2
 
-//exercise 3, already finished, I comment just for moving foward exercise 4
-/* let userInput = parseInt(prompt('Please enter number'));
+//exercise 3
+ let userInput = parseInt(prompt('Please enter number'));
 if (!(userInput % 2)){
   alert(`${userInput} is an even number`);
 }else{
   alert(`${userInput} is an odd number`);
-} */
+} 
 
 
 //end3
