@@ -1,0 +1,29 @@
+<html>
+<body>
+  <div id="container">Users:</div>
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>
+  <script>
+  const allUlTags = document.querySelectorAll('.list');
+  allUlTags[0].lastElementChild.textContent = 'Richard';
+  allUlTags.forEach((ul)=> {
+    ul.firstElementChild.textContent = 'Ramzy';
+  });
+  allUlTags[1].removeChild(allUlTags[1].children[1]);
+  
+  allUlTags.forEach((ul)=>{
+    ul.classList.add('student_list');
+  });
+
+  allUlTags[0].classList.add('university', 'attendance');
+
+  </script>
+</body>
+</html>

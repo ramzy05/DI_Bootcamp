@@ -1,0 +1,22 @@
+<html>
+<body>
+  <div>Users:
+    <ul>
+      <li>John</li>
+      <li>Pete</li>
+    </ul>
+  </div>
+  <script>
+    const userDiv = document.body.querySelector('div');
+    userDiv.style.cssText='background-color: lightblue;\
+                           padding: 20px 100px;';
+    const ulTag = document.querySelector('ul')
+    ulTag.firstElementChild.style.display = 'none';
+    ulTag.lastElementChild.style.border = '2px solid red';
+    document.body.style.fontSize = '2rem';
+   if(userDiv.style.backgroundColor === 'lightblue'){
+     alert(`Hello ${ulTag.firstElementChild.textContent} and ${ulTag.lastElementChild.textContent}`);
+   }
+  </script>
+</body>
+</html>
