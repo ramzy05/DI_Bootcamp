@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <tr></tr>
+
+  <script>
+    function createCalendar(year, month){
+      function getDay(date){
+        //this function is to set sunday as the last day
+        let day = date.getDay();
+        if(day == 0/*Sunday*/)/*then*/ day = 7;
+        return day - 1; // day in range 0-7 :-)
+      }
+
+      let table = "<table><tr><th>MO</th>\
+        <th>TU</th><th>WE</th><th>TH</th>\
+        <th>FR</th><th>SA</th><th>SU</th></tr><tr>"; 
+      let goodMonth = month -1;
+      let date = new Date(year, goodMonth);
+      /*date.getDay() return a number in range 0-6, which matches sund-friday
+      and that number is the first the day of the month
+      so will should put white space on before the month first day*/
+      for (let index = 0; index < getDay(date); index++) {
+        table += '<td>.</td>';
+      }
+
+      //let'us add the month's days starting by the first day
+      while(date.getMonth() == goodMonth){
+        table += `<td>${date.getDate()}</td>`;
+
+        //check if the day is sunday next row
+        if(getDay(date) === 6){
+          table = '</tr><tr>';
+        }
+        //increment the day using setDay
+        date.setDate(date.getDate() + 1 );
+      }
+
+      table += '</tr></table>';
+      document.body.innerHTML = table;
+     //document.querySelector('table').style.border = '1px solid red';
+    }
+    createCalendar(2012, 9);
+  </script>
+</body>
+</html>
