@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+  /*   let sayHi =()=>{
+      alert("Hello world!");
+    };
+    let sayBye =()=>{
+      alert("Good Bye!");
+    };
+    let idTime = setTimeout(sayHi, 5000);
+    let idTime2 = setTimeout(sayBye, 5000);
+    */
+   let i = 10; 
+   let timer = setInterval(countDown, 1000);
+   function countDown(){
+     console.log('The sales end in '+i+' sec');
+     i--;
+     if(i < 0){
+       clearInterval(timer)
+     }
+   };
+
+
+  </script> 
+</body>
+</html>
