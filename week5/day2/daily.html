@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+      <li>Verb: <input type="text" id="verb"></li>
+      <li>A place: <input type="text" id="place"></li>
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+    <button id="shufl-button">Shuffle!</button>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+    <script>
+      let count = 0;
+      let sentence = [], output = '';
+      const libBtn = document.getElementById('lib-button');
+      const shuflBtn = document.getElementById('shufl-button');
+      const inputs  = document.querySelectorAll('input');
+      libBtn.addEventListener('click',function(e){
+        sentence = [];
+        count = 0;
+        output = ''
+        inputs.forEach(function(input){
+          if(input.value == ''){
+            alert(input.getAttribute('id')+' field cannot be blank');
+          }else{
+            sentence.push(input.value)
+          }
+        });
+        if(sentence){
+          count ++;
+          console.log(sentence.join(' '));
+        }
+        e.preventDefault();
+      });
+      
+      function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+      }
+      shuflBtn.addEventListener('click', function(e){
+          if(count >= 1 && 3 >= count && sentence){
+            sentence = shuffle(sentence);
+            console.log(sentence.join(' '));
+            count++; 
+          }else{
+            count = 0;
+            inputs.forEach(function(input){
+              input.value = '';
+            });
+          if(sentence == []){
+            sentence = [];
+            console.log("Please enter new inputs")
+          }else{
+          console.log("Please enter inputs")
+
+          }
+        }
+          e.preventDefault()
+        });
+    </script>
+</body>
+</html>

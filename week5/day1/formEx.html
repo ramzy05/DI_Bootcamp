@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="form1" onsubmit="getvalue()"> 
+    <label>First name: </label><input type="text" name="fname" value="David"><br> 
+    <label>Last name: </label><input type="text" name="lname" value="BenGurion"><br> 
+    <input type="submit" value="Submit"> 
+  </form>
+
+  <select id="A">
+    <option value="apple">Apple</option>
+    <option value="pear">Pear</option>
+    <option value="banana">Banana</option>
+  </select>
+  <script>
+    function getvalue(){
+      alert(document.forms[0].elements.fname.value +' '+ document.forms[0].elements.lname.value);
+    }
+    //get the select form
+  let dropdown = document.getElementById('A')
+  </script> 
+</body>
+</html>
