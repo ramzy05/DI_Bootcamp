@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate"></div>
+        </div>
+        <script>
+          let btn = document.querySelector('button');
+          let animDiv = document.getElementById('animate');
+          let timer = setInterval(myMove,100)
+          let i =1;
+          function myMove(){
+           
+              animDiv.style.left = i +"%";
+              animDiv.style.top = i +"%";
+              i++;
+            if(parseFloat(animDiv.style.top.slice(0, animDiv.style.top.length-1)) >= 87.60 && parseFloat(animDiv.style.left.slice(0, animDiv.style.left.length-1)) >= 87.60){
+              clearInterval(timer);
+            }
+          }
+        </script>
+    </body>
+    </html>

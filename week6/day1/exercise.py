@@ -1,0 +1,1 @@
+print('dzd,sd',3)
