@@ -12,10 +12,10 @@ players = [
     'name': 'playerX', 
   },
   {
-    'value': ' O ',
+    'value': ' Y ',
     'row': '',
     'col': '',
-    'name': 'playerO', 
+    'name': 'playerY', 
   }
 ]
 
@@ -52,8 +52,6 @@ def display_board():
   print('*****************')
 
 
-def placePlayerChoice(player):
-  resultat[player['row']-1][player['col']-1] = player['value']
     
 
 def check_line(line):
@@ -61,9 +59,9 @@ def check_line(line):
     display_board()
     print('\n\nPlayerX win')
     return True
-  elif line.count(' O ') == 3:
+  elif line.count(' Y ') == 3:
     display_board()
-    print('\n\nPlayerO win')
+    print('\n\nPlayerY win')
     return True
   return False
 
@@ -115,6 +113,9 @@ def check_win():
 
   
 
+def placePlayerChoice(player):
+  resultat[player['row']-1][player['col']-1] = player['value']
+  
 def player_input(player):
   #getting the row
   while True:
@@ -146,13 +147,13 @@ def player_input(player):
           break
 
     if str(player['row'])+str(player['col']) not in idResponse:
-        print(f"\nA la ligne {player['row']} et à la colonne {player['col']} sont deja occupes, veuillez choisir une autre position\n")
+        print(f"\nLa position ligne {player['row']} colonne {player['col']} est deja occupee, veuillez choisir une autre position\n")
         continue
     else:
       #success
       placePlayerChoice(player)
 
-      #enlevons les couples possibles dans idResponse:
+      #enlevons le couple valide entrée par le joueur dans idResponse:
       idResponse.remove(str(player['row'])+str(player['col']))
 
       break
