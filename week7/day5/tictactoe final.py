@@ -30,16 +30,7 @@ idResponse = [
   '32',
   '33'
 ]
-""" resultat = [
 
-  '*****************',
-  ['*  ',' X ','|',' X ','|',' X ', '  *'],
-  ['*  ','---','|','---','|','---','  *'],
-  ['*  ','   ','|','   ','|','   ', '  *'],
-  ['*  ','---','|','---','|','---','  *'],
-  ['*  ','   ','|','   ','|','   ','  *'],
-  '*****************'
-] """
 
 resultat =[
   ['   ','   ','   '],
@@ -51,7 +42,7 @@ resultat =[
 
 def display_board():
 
-  print('\nTIC TAC TOE')
+  print('\nTIC TAC TOE\n')
   print('*****************')
   print(f"*  {resultat[0][0]}|{resultat[0][1]}|{resultat[0][2]}  *")
   print('*  ---|---|---  *')
@@ -166,9 +157,6 @@ def player_input(player):
 
       break
 
-"""player_input(players[1])
-display_board() """
-
 #stop est une variable global qui va permettre de stopper ma boucle dans la fonction play
 
 
@@ -180,10 +168,14 @@ def change_player(player):
   
 
 def play():
-
   count = 1 #count sera superieur ou egale à 3
   player = players[randint(0,1)]
   
+  print('Game starting')
+  print('loading...')
+  print('.....')
+  print('..')
+  print('Start')
   display_board()#print board first time
 
   player_input(player)#initialisation du jeu, premier tour du premier joueur
