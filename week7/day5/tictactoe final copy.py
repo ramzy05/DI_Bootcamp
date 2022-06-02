@@ -103,7 +103,7 @@ def check_win():
   #check les lignes
   list_to_check.extend(col_to_line(list_to_check_copy))
   list_to_check.extend(diag_to_line(list_to_check_copy))
-  
+
   for line in list_to_check:
     if check_line(line):
       return True

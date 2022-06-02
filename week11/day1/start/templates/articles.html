@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flask</title>
+</head>
+<body>
+  <button><a href="{{ url_for('welcome_to_user') }}">Go back to homepage</a></button>
+  <br>
+  <h1>My users</h1>
+  <ul>
+    <li><h2>{{ articles[0]['title'] }}</h2></li>
+    <li>{{ articles[0]['content'] }}</li>
+    <li>{{ articles[0]['author'] }}</li><br>
+    <li><h2>{{ articles[1]['title'] }}</h2></li>
+    <li>{{ articles[1]['content'] }}</li>
+    <li>{{ articles[1]['author'] }}</li>
+  </ul>
+</body>
+</html>
