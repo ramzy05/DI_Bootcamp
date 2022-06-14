@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My shop</title>
+</head>
+<body>
+  <style>
+    *, ::before, ::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root{
+      --border: 1px solid red;
+    }
+    .content{
+      display: flex;
+      margin: 50px 10px;
+      flex-direction: column;
+      border: var(--border);
+    }
+    .title{
+      align-self: center;
+    }
+    .cart{
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .products{
+      display: flex;
+      flex-direction: column;
+    
+      width: 90%;
+      border: var(--border);
+    }
+    .product_item{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      border: 2px solid green;
+      
+    }
+    .product_price{
+      margin-left: 20px;
+      
+    }
+    .btn{
+      padding: 10px 15px;
+      width: 100px;
+      margin: 0 auto;
+    }
+    .totals{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-right: 100px;
+    }
+  </style>
+  <div class="content">
+    <!-- <div class="products">
+      <div class="product">
+        <div class="product__img">
+          
+        </div>
+        <div class="product__info">
+          
+        </div>
+      </div>
+    </div> -->
+    <h1 class="title"> All our products</h1>
+    <div class="cart">
+      <div class="totals">
+        <div>
+          Total of products: <span class="product_total">{{totals[1]}}</span>
+        </div>
+        <div>
+          
+          Total: $<span class="products__total__price">{{totals[0]}}</span>
+        </div>
+      </div>
+      <div class="products">
+        {% for product in products %}
+          <div class="product_item">
+            <span class="product__name">Product name: {{product['Name']}}</span>
+            <span class="product_price">Price: $<span>{{product['Price']}}</span></span>
+            <button class="btn"><a href={{ url_for('see_more_product', product_id=product['ProductId'])}}> See more </a></button>
+            <button class="delete_prod btn">Remove</button>
+          </div>
+        {% endfor %}
+        <!-- <div class="product_item">
+          <span class="product__name">Product name: Airpods</span>
+          <span class="product_price">price: <span>$20</span></span>
+        </div>
+        <div class="product_item">
+          <span class="product__name">Product name: Airpods</span>
+          <span class="product_price">price: <span>$20</span></span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <script >
+    let total_price = document.querySelector('.products__total__price');
+    let total_product = document.querySelector('.product_total');
+    let del_btns = document.querySelectorAll('.delete_prod')
+    
+    del_btns.forEach(btn=>{
+      btn.addEventListener('click',function(){
+        let product = this.parentNode;
+        let product_price = parseFloat(product.querySelector('.product_price span').textContent);
+        total_price.textContent = (parseFloat(total_price.textContent) - product_price).toFixed(2);
+        let total = parseFloat(total_product.textContent );
+        total_product.textContent =  (total < 0) ? 0 : total-1;
+        //enlevons le produit
+        product.remove()
+      })
+    });
+    setInterval(function(){
+      let total_p = parseFloat(total_product.textContent );
+      if(total_p<0) total_product.textContent = 0;
+
+      let total_num_p = parseFloat(total_price.textContent );
+      if(total_num_p<0) total_price.textContent = 0.00;
+    }, 1)
+  </script>
+ <!--  <div style="display :flex; flex-direction:column;">
+    
+    {% for product in products %}
+      <div style="display :flex; flex-direction:column; margin:10px 0; border:1px solid orange;">
+        {% for key, value in product.items() %}
+        <span style="color:gray; font-weight: bold;">
+          {{key}}: {{value}}
+        </span>
+        {% endfor %}
+        <a href={{ url_for('see_more_product', product_id=product['ProductId'])}}> See more </a>
+      </div>
+    {% endfor %}
+  </div> -->
+  </body>
+</html>

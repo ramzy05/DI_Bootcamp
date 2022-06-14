@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My shop</title>
+</head>
+<body>
+  <h1 style="color: green;">produit: {{product["ProductId"]}}</h1>
+  <div style="display :flex; flex-direction:column;">
+    
+      <div style="display :flex; flex-direction:column; margin:10px 0; border:1px solid orange;">
+        {% for key, value in product.items() %}
+        <span style="color:gray; font-weight: bold;">
+          {{key}}: {{value}}
+        </span>
+        {% endfor %}
+       
+      </div>
+      
+    </div>
+    <script>let product = '{{product["Name"]}}'</script>
+
+    <button style="padding: 10px 20px" onclick="alert(`${product} added to cart`)">Add to cart</button>
+  </body>
+</html>
